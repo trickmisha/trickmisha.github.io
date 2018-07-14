@@ -8,7 +8,12 @@ if((isset($_POST['phone'])&&$_POST['phone']!="")){ //Проверка отпра
                         <title>'.$subject.'</title>
                     </head>
                     <body>
-                        <p>Телефон: '.$_POST['phone'].'</p>                        
+                        <p>Размер авто: '.$_POST['step1'].'</p>                        
+                        <p>Год авто: '.$_POST['step2'].'</p>                        
+                        <p>Основные элементы: '.$_POST['step3'].'</p>                        
+                        <p>Доп. Элементы: '.$_POST['step4'].'</p>                        
+                        <p>Качество пленки: '.$_POST['step4'].'</p>                        
+                        <p>Телефон: '.$_POST['phone'].'</p>                                             
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
