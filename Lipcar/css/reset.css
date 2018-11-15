@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.woff2') format('woff2'),
+         url('fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Medium.woff2') format('woff2'),
+         url('fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-SemiBold.woff2') format('woff2'),
+         url('fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    color:#000;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+i{
+    font-style: normal;
+}
+.row{
+    box-sizing: border-box;
+}
+.button{
+    height: 79px;
+    cursor: pointer;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f6821d;
+    -webkit-box-shadow: 0 3px #e96e00;
+    box-shadow: 0 3px #e96e00;
+    background-image: -webkit-linear-gradient(bottom, #ff7800, #ffba36);
+    background-image: linear-gradient(to top, #ff7800, #ffba36);
+
+    color:#fff;
+    text-align: center;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.5;
+    -webkit-user-select: none;
+    user-select: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align:center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.05s linear 0s;
+}
+.button:hover{
+    background-color: #f6821d;
+    -webkit-box-shadow: 0 3px #e96e00;
+    box-shadow: 0 3px #e96e00;
+    background-image: -webkit-linear-gradient(bottom, #ff8d27, #ffc34f);
+    background-image: linear-gradient(to top, #ff8d27, #ffc34f);
+}
+.button:active, .red-button:active{
+    top:1px;
+}
+
+.hide{
+    display: none;
+}
+input[type=submit],
+button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

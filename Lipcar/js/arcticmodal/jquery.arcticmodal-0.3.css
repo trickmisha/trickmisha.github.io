@@ -1,0 +1,41 @@
+.arcticmodal-overlay,
+.arcticmodal-container { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1000; }
+.arcticmodal-container { overflow: auto; margin: 0; padding: 0; border: 0; border-collapse: collapse; }
+*:first-child+html .arcticmodal-container { height: 100% }
+.arcticmodal-container_i { height: 100%; margin: 0 auto; }
+.arcticmodal-container_i2 { padding: 24px; margin: 0; border: 0; vertical-align: middle; }
+.arcticmodal-error { padding: 20px; border-radius: 10px; background: #000; color: #fff; }
+.arcticmodal-loading { width: 80px; height: 80px; border-radius: 10px; background: #000 url(loading.gif) no-repeat 50% 50%; }
+.box-modal_close { position: absolute; left: 101%; top: 0px; font-size: 11px; line-height: 15px; color: #999; cursor: pointer; }
+.box-modal_close:hover { color: #666; }
+
+
+/* Modal Form Theme */
+.box-modal{
+	padding: 0px;
+	position: relative;
+	max-width: 1800px;
+	width: 100%;
+	margin:0 auto;
+	background: #ffffff;
+}
+.box-modal iframe{
+	display: block;
+	max-width: 100%;
+}
+.box-modal_close{
+	width: 30px;
+	height: 30px;
+	border-radius: 2px;
+	background: url(../../images/cd-icon-close.svg) center center no-repeat;
+	background-size: 90% 90%;
+}
+@media screen and (max-width:800px){
+	.box-modal_close{
+		background: url(../../images/cd-icon-close.svg) #ff8107 center center no-repeat;
+		background-size: 90% 90%;
+		right:10px;
+		left: auto;
+		top:10px;
+	}
+}
